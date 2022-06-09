@@ -51,9 +51,6 @@ export default class SortableTable {
 
   getHeaderRow({id, title, sortable}) {
     const order = this.sorted.id === id ? this.sorted.order : `asc`;
-    console.error('order ', order);
-    console.error('id ', id);
-
     return `
       <div class="sortable-table__cell" data-id="${id}" data-sortable="${sortable}"
       data-order="${order}">

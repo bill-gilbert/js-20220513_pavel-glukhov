@@ -4,4 +4,18 @@ const BACKEND_URL = 'https://course-js.javascript.ru';
 
 export default class ColumnChart {
 
+  element;
+
+
+  destroy() {
+    this.remove();
+    this.element = null;
+  }
+
+  remove() {
+    if (this.element) {
+      this.element.remove();
+    }
+  }
+
 }
